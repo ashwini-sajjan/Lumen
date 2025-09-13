@@ -21,7 +21,6 @@ import { motion } from "framer-motion";
 const Home = () => {
   const { currentUser } = useAuth();
 
-  // Core Features (PRD aligned)
   const features = [
     {
       icon: Package,
@@ -73,7 +72,6 @@ const Home = () => {
     },
   ];
 
-  // Firebase-first architecture highlight
   const firebaseFeatures = [
     {
       icon: Shield,
@@ -97,7 +95,6 @@ const Home = () => {
     },
   ];
 
-  // Stats
   const stats = [
     { number: "1,000+", label: "Active Subscriptions", icon: Package },
     { number: "99.9%", label: "Uptime", icon: TrendingUp },
@@ -107,7 +104,6 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-500">
-      {/* Hero Section */}
       <section className="relative overflow-hidden pt-20 pb-16">
         <motion.div
           initial={{ opacity: 0 }}
@@ -147,7 +143,6 @@ const Home = () => {
             users the freedom to manage their subscriptions—securely, in real-time.
           </motion.p>
 
-          {/* Single CTA Button */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -163,7 +158,6 @@ const Home = () => {
             </Link>
           </motion.div>
 
-          {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, i) => {
               const Icon = stat.icon;
@@ -189,7 +183,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
       <section className="py-20 bg-gray-50 dark:bg-gray-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -232,7 +225,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Firebase-first Architecture */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -268,7 +260,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h2
