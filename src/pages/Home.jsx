@@ -153,7 +153,7 @@ const Home = () => {
               to="/dashboard"
               className="group flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl font-semibold shadow-lg hover:scale-110 hover:-rotate-1 transition-all duration-500"
             >
-              <span>Go to Dashboard</span>
+              <span>Get Started</span>
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-2 transition-transform" />
             </Link>
           </motion.div>
@@ -283,7 +283,7 @@ const Home = () => {
               to="/dashboard"
               className="px-8 py-4 bg-white text-blue-600 rounded-2xl font-semibold shadow-lg hover:scale-110 transition-all duration-500"
             >
-              Go to Dashboard
+              Get Started
             </Link>
           </div>
         </div>
